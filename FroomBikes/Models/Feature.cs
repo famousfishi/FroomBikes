@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FroomBikes.Models
 {
-    public class Make
+    public class Feature
     {
         public int Id { get; set; }
 

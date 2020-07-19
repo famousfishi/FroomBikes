@@ -3,14 +3,16 @@ using FroomBikes.AppDbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FroomBikes.Migrations
 {
     [DbContext(typeof(FroomDbContext))]
-    partial class FroomDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200719205125_AddedDataAnnotationsToMakeAndModels")]
+    partial class AddedDataAnnotationsToMakeAndModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
